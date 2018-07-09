@@ -14,14 +14,15 @@ Summary: Official Imgur python library with OAuth2 and samples
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/imgurpython-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/imgurpython-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/imgurpython-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/imgurpython-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/imgurpython-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/imgurpython-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/imgurpython-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/imgurpython-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/imgurpython/badges/version.svg)](https://anaconda.org/conda-forge/imgurpython)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/imgurpython/badges/downloads.svg)](https://anaconda.org/conda-forge/imgurpython)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-imgurpython-green.svg)](https://anaconda.org/conda-forge/imgurpython) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/imgurpython.svg)](https://anaconda.org/conda-forge/imgurpython) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/imgurpython.svg)](https://anaconda.org/conda-forge/imgurpython) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/imgurpython.svg)](https://anaconda.org/conda-forge/imgurpython) |
 
 Installing imgurpython
 ======================
@@ -66,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
