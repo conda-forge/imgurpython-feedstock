@@ -6,25 +6,27 @@ package:
 
 source:
   fn: imgurpython-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/i/imgurpython/imgurpython-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/i/imgurpython/imgurpython-{{ version }}.tar.gz
   md5: f2eb3a55c495d80812bae2238721da06
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 2
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python {{ python_min }}
     - setuptools
     - requests
   run:
-    - python
+    - python >={{ python_min }}
     - requests
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - imgurpython
     - imgurpython.helpers
